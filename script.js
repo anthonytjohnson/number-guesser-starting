@@ -17,10 +17,5 @@ const updateScore = (winner) => {
   winner === 'human' ? humanScore += 1 : computerScore += 1;
 }
 
-updateScore('human');
-console.log(humanScore);
-console.log(computerScore);
+const advanceRound = () => currentRoundNumber += 1;
 
-updateScore('human');
-console.log(humanScore);
-console.log(computerScore);
