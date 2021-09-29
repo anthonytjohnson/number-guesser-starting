@@ -3,4 +3,8 @@ let computerScore = 0;
 let currentRoundNumber = 1;
 
 // Write your code below:
+const generateTarget = () => {
+  return Math.floor(Math.random()*10);
+}
 
+console.log(generateTarget());
