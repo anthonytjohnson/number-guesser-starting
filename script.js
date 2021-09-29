@@ -7,4 +7,20 @@ const generateTarget = () => {
   return Math.floor(Math.random()*10);
 }
 
-console.log(generateTarget());
+const compareGuesses = (userGuess, compGuess, targNum) => {
+  const userScore = Math.abs(userGuess - targNum);
+  const compScore = Math.abs(compGuess - targNum);
+  return userScore <= compScore;
+}
+
+const updateScore = (winner) => {
+  winner === 'human' ? humanScore += 1 : computerScore += 1;
+}
+
+updateScore('human');
+console.log(humanScore);
+console.log(computerScore);
+
+updateScore('human');
+console.log(humanScore);
+console.log(computerScore);
